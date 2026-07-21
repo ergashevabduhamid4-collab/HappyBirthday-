@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5" />
+        <meta name="description" content="Happy Birthday Khadija - A special birthday celebration" />
+        <meta name="theme-color" content="#8a3faf" />
+        <title>Happy Birthday Khadija</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="page-shell">
+            <header class="site-header">
+                <p>Happy Birthday</p>
+            </header>
+
+            <main class="hero-section">
+                <div class="hero-copy centered">
+                    <p class="hero-subtitle">عيد ميلاد سعيد</p>
+                    <h1>خَدِيجَة</h1>
+                    <p class="hero-text">
+                        To my amazing best friend — may your day be full of laughter, love, and unforgettable moments.
+                    </p>
+                    
+                    <button id="wishButton" class="wish-button">Make a wish</button>
+                    <div id="wishForm" class="wish-form hidden">
+                        <textarea id="wishInput" class="wish-input" rows="4" placeholder="Write your birthday wish here..."></textarea>
+                        <button id="sendWishButton" class="send-button">Send wish</button>
+                        <p id="wishFeedback" class="wish-feedback hidden">Wish sent! 🎉</p>
+                    </div>
+                </div>
+            </main>
+            <section class="countdown-section">
+                <div class="countdown-container">
+                    <p class="countdown-label">Get ready for the surprise in</p>
+                    <div class="countdown-display" id="countdownDisplay">10</div>
+                    <div class="countdown-images">
+                        <img id="surpriseImage" class="surprise-image hidden" src="hamster1.jpg" alt="Birthday surprise" />
+                        <img id="surpriseImage2" class="surprise-image hidden" src="hamster2.png" alt="Birthday surprise right" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="extra-section">
+                <div class="extra-copy">
+                    <p class="section-title">Special birthday section</p>
+                    <h2>Why today is even more special</h2>
+                    <p>Here are a few reasons why your friendship means so much to me — small reminders of how amazing you are.</p>
+                    <p>Every moment with you brings joy, warmth, and a celebration of the beautiful person you are.</p>
+                </div>
+                <div class="card-grid">
+                    <article class="mini-card">
+                        <h3>Always shining</h3>
+                        <p>Your smile lights up every room and every moment becomes brighter.</p>
+                    </article>
+                    <article class="mini-card">
+                        <h3>Great listener</h3>
+                        <p>You make every conversation feel safe, supportive, and full of laughter.</p>
+                    </article>
+                    <article class="mini-card">
+                        <h3>Beautiful memories</h3>
+                        <p>From silly adventures to quiet talks, every memory with you is unforgettable.</p>
+                    </article>
+                    <article class="mini-card">
+                        <h3>Constant inspiration</h3>
+                        <p>Your kindness and creativity remind me daily of how special this friendship is.</p>
+                    </article>
+                </div>
+            </section>
+
+            
+
+            <section class="memories-section">
+                <div class="memories-header">
+                    <p class="section-title">Our Memories</p>
+                    <h2>All the Places You Still Live in My Heart</h2>
+                </div>
+                <div class="memories-slider" aria-label="Memory slides">
+                    <div class="memory-card memory-slide active" data-memory="1">
+                        <div class="memory-content">
+                            <p class="memory-number">Memory 1</p>
+                            <p class="memory-text">Remember when we went on that trip to the mountains in 10th grade? That place means a lot to me, because it was the first time I held your hand. I still think about that moment sometimes… not because it was something big or loud, but because it felt real. Like everything around us just stopped for a second.</p>
+                        </div>
+                    </div>
+                    <div class="memory-card memory-slide" data-memory="2">
+                        <div class="memory-content">
+                            <p class="memory-number">Memory 2</p>
+                            <p class="memory-text">While I was going to school in the morning, you showed up on that street, and after that you couldn’t come for about a month. During that time, every single morning I would wait on that exact same street for you to come… even when I knew you probably wouldn’t. And when you finally showed up again after that, it felt different—but that place still stayed with me. Even now, it’s not just a street anymore, it’s a memory I carry with me.</p>
+                        </div>
+                    </div>
+                    <div class="memory-card memory-slide" data-memory="3">
+                        <div class="memory-content">
+                            <p class="memory-number">Memory 3</p>
+                            <p class="memory-text">I’m gonna be honest with you… I used to always ask our tutor if I could sit beside you. We never really officially sat next to each other most of the time, but whenever we did, I remember everything. Every small moment, every silence, every random thing that didn’t even matter to anyone else but somehow meant a lot to me.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-controls">
+                    <button class="slide-button prev" type="button" aria-label="Previous memory">←</button>
+                    <div class="slide-indicators" aria-label="Memory navigation"></div>
+                    <button class="slide-button next" type="button" aria-label="Next memory">→</button>
+                </div>
+               
+            </section>
+
+            <section class="since-section">
+                <div class="since-card">
+                    <p class="section-title">Since</p>
+                    <h2>June 15, 2026</h2>
+                    <div class="since-display" aria-live="polite">
+                        <div class="since-days"><span id="sinceDays">0</span> days</div>
+                        <div class="since-time"><span id="sinceHours">00</span>:<span id="sinceMinutes">00</span>:<span id="sinceSeconds">00</span></div>
+                    </div>
+                    <h3>This is how much time has passed since the last time I saw you… but in my mind, you never really left. Some days it still feels like I’ll see you again anytime soon, even though I know things have changed.</h3>
+                </div>
+            </section>
+
+            
+
+            <section class="music-section">
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6lnqe1urLVOV4tn0YgmnIw?utm_source=generator&si=7b15bdc194e34ed5&t=50" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </section>
+            <section class="waguri-section">
+                <div class="waguri-card">
+                    <div class="waguri-content">
+                        <h2>Born too late to see dinasours, too early to see flying cars, but just in time to meet the most amazing person</h2>
+                        <h2>(YOU)</h2>
+                    </div>
+                </div>
+            </section>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2vlkTkPqdATznKHu9gD2c1?utm_source=generator&si=63e90efd88b24b1f" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <section class="waguri-section">
+                <div class="waguri-card">
+                    <div class="eyes-image">
+                        <img class="eyes" src="eyes.jpg" alt="Waguri" />
+                    </div>
+                    <div class="waguri-content">
+                        <h2>You really do have Bambi eyes. They're the prettiest eyes I've ever seen, and I couldn't make that book without drawing them. It ended up being my favorite page, because it reminds me of you the most. 🤍🦌</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="music-section">
+                
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6XDBohkvajOwoqr8jHPjzQ?utm_source=generator&si=7ba6a441398b4438=37" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+                
+            </section>
+            <section class="waguri-section">
+                <div class="waguri-card">
+                    <div class="waguri-image">
+                        <img src="waguri.jpg" alt="Waguri" />
+                    </div>
+                    <div class="waguri-content">
+                        <h2>I drew this for your birthday surprise…
+but your curiosity made me reveal it earlier than I wanted to.
+This character shares your birthday, and she even feels like you — in her look, her vibe, her personality… everything.
+But no matter how close she gets… she can never be you.
+Because you’re not replaceable. You’re one of a kind 💖</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="waguri-section">
+                <div class="waguri-card">
+                    <div class="waguri-content">
+                        <h2>You would realize how beautiful you are, if you could see yourself through my eyes</h2>
+                    </div>
+                </div>
+            </section>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4SMoFA6NSvyUHbqcu2JOYG?utm_source=generator&si=0267625ffd804fda" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <section class="bday-cake">
+                <div class="cake-card">
+                    <p class="section-title">Birthday cake</p>
+                    <h2>Make a wish and blow out the candles!</h2>
+                    <div class="cake-image">
+                        <img src="bdaycake.jpg" alt="Birthday cake" />
+                    </div>
+                </div>
+            </section>
+
+             <section class="music-section">
+                
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3oTuTpF1F3A7rEC6RKsMRz?utm_source=generator&si=21a6de8d0e9e40fe&t=53" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                
+            </section>
+
+            <section class="waguri-section">
+                <div class="waguri-card">
+                    <div class="waguri-image">
+                        <img src="things.jpg" alt="Waguri" />
+                    </div>
+                    <div class="waguri-content">
+                        <h2>What dreams?
+
+For a long time, I used to watch my friends talk about their girlfriends and all the little moments they shared together. I'd smile for them, but deep inside, I always wondered what it felt like to have someone like that in my own life. I never had a girlfriend, so those simple things became dreams I quietly kept to myself.
+
+I dreamed of walking home with someone, waiting for the bus together, stopping by a small shop just because we felt like it, surprising each other with little gifts, sitting side by side during class, comforting each other on difficult days, laughing over the smallest things, and creating memories that would stay with us forever.
+
+Then you came into my life. Without us ever calling it a relationship, you gave me almost everything I'd spent years imagining. Those moments that seemed ordinary to everyone else were extraordinary to me because they were my firsts. My first time feeling that kind of closeness, that kind of comfort, that kind of happiness with someone.
+
+Those moments will always be precious to me, because they were everything I'd once believed I'd never get to experience. That's why those memories are so precious to me. They weren't special because they were perfect—they were special because they were with you. 💖</h2>
+                    </div>
+                </div>
+            </section>
+
+            <div id="confetti"></div>
+        </div>
+
+        <section class="music-section">
+                
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6dOtVTDdiauQNBQEDOtlAB?utm_source=generator&si=2ed1d0abb5aa4460=40" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                
+            </section>
+
+        <section class="ending">
+            <div class="ending-content">
+                <h2>Thank you for making this day special!</h2>
+                <p>I hope you have a wonderful birthday!</p>
+
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
